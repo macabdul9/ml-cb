@@ -65,11 +65,8 @@ while True:
 print("total faces", len(face_data))
 face_data = np.array(face_data)
 face_data = face_data.reshape(face_data.shape[0], -1)
-
 np.save("facedata/" + user_name + ".npy", face_data)
-
 print("Saved at Facedata/" + user_name + ".npy")
-
 print(face_data.shape)
 
 
